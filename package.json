@@ -1,0 +1,11 @@
+{
+  "name": "MississippiBot",
+  "version": "1.0.0",
+  "description": "Fun in Mississippi",
+  "main": "bot.js",
+  "author": "Kacper#9998",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^2.4.0"
+  }
+}
