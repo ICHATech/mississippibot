@@ -31,13 +31,14 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Hello!'
-                    
-            case 'oh a secret'
+                  
+                });
+            break;
+                   case 'oh a secret'
                     bot.sendMessage({
                         to: ChannelID
                         message: 'Why do you need disturb me?'
                 });
-            break;
             // Just add any case commands if you want to..
          }
      }
