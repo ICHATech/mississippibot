@@ -26,12 +26,28 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
+
             case 'hi':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Hello!'
+                 
+            case 'whatsapp':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://discord.gg'
                   
+                    
+            case '149':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '149 to Edmonton Bridge http://londonbusesbyadam.zenfolio.com/img/s/v-3/p1784743378-4.jpg (LT599)'
+                  
+                     case 'homework':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://cdn.discordapp.com/attachments/420482155425300481/425374229333278730/JPEG_20180319_192451.jpg'
+                    
                 });
 
             // Just add any case commands if you want to..
