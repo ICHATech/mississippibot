@@ -31,11 +31,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Hello!'
-                 
-            case 'whatsapp':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'https://discord.gg'
+
                   
                     
             case 'homework':
