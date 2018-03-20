@@ -33,14 +33,14 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Hello!'
 
                   
-                    
-            case 'homework':
+
+                });
+
+				 case 'homework':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://cdn.discordapp.com/attachments/420482155425300481/425374229333278730/JPEG_20180319_192451.jpg'
-                    
-                });
-
+				})
             // Just add any case commands if you want to..
          }
      }
