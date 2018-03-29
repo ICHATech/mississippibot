@@ -39,7 +39,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case 'homework':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'https://cdn.discordapp.com/attachments/420482155425300481/425374229333278730/JPEG_20180319_192451.jpg'
+                    message: '[EXPIRED]'
 
                   
 
