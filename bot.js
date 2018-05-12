@@ -101,25 +101,7 @@ break;
                 })
  break;
   
-  
-             case 'changelog':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '
-					
-					```
-					Changelog:
-					Added-
-					-/babyicha  sends baby icha emoji
-					-/emoji  Sends the emoji form
-					-/rules  sends rules
-					```
-					'
-
-                  
-
-                })
- break;
+ 
              
   
              case 'babyicha':
@@ -142,20 +124,7 @@ break;
 
                 })
  break;
-             case 'rules':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '
-					```
-					1. No swearing
-					2. Be kind
-					3. There is no full rule sheet but any offensive insults or anything that is not gone over in this and is logical enough not to do it, don't do it
-					```'
 
-                  
-
-                })
- break;
          }
      }
 });
