@@ -18,8 +18,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `/`
+   
     if (message.substring(0, 1) == '/') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
@@ -39,7 +38,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case 'homework':
                 bot.sendMessage({
                     to: channelID,
-                    message: '[EXPIRED]'
+                    message: 'https://cdn.discordapp.com/attachments/425741489549737999/441315894782722048/unknown.png'
 
                   
 
@@ -101,7 +100,62 @@ break;
 
                 })
  break;
-            // Just add any case commands if you want to.. https://farm6.staticflickr.com/5797/22897112723_10b14cdda1.jpg
+  
+  
+             case 'changelog':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '
+					
+					```
+					Changelog:
+					Added-
+					-/babyicha  sends baby icha emoji
+					-/emoji  Sends the emoji form
+					-/rules  sends rules
+					```
+					'
+
+                  
+
+                })
+ break;
+             
+  
+             case 'babyicha':
+                bot.sendMessage({
+                    to: channelID,
+                    message: ':babyicha:'
+
+                  
+
+                })
+ break;
+  
+  
+             case 'emoji':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://goo.gl/forms/BglLeEillA3Q4Wr53'
+
+                  
+
+                })
+ break;
+             case 'rules':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '
+					```
+					1. No swearing
+					2. Be kind
+					3. There is no full rule sheet but any offensive insults or anything that is not gone over in this and is logical enough not to do it, don't do it
+					```'
+
+                  
+
+                })
+ break;
          }
      }
 });
